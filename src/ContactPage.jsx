@@ -92,16 +92,16 @@ function ContactPage({ navigate, onOpenConsult }) {
             <ContactCard
               icon={<Icons.Mail size={22}/>}
               label="ПОЧТА"
-              value="hello@manasstroy.kz"
+              value="info@manasstroi.kz"
               hint="Для проектной документации"
-              href="mailto:hello@manasstroy.kz"
+              href="mailto:info@manasstroi.kz"
             />
             <ContactCard
               icon={<Icons.Instagram size={22}/>}
               label="INSTAGRAM"
-              value="@манасстрой"
-              hint="12 400 подписчиков"
-              href="https://instagram.com"
+              value="@manas_stroi"
+              hint="82 200 подписчиков"
+              href="https://instagram.com/manas_stroi/"
             />
           </div>
         </Container>
@@ -119,11 +119,11 @@ function ContactPage({ navigate, onOpenConsult }) {
                 <div className="p-8 md:p-10 flex-1 flex flex-col">
                   <Eyebrow dark className="mb-4">ОФИС И ПРОИЗВОДСТВО</Eyebrow>
                   <h3 className="display text-[28px] md:text-[32px] font-medium tracking-tight leading-tight mb-6">
-                    Атырау, ул. Сатпаева 14
+                    Атырау, ул. Сырым Датова 99а
                   </h3>
                   <div className="space-y-5 text-[14.5px]">
-                    <ContactLine icon={<Icons.MapPin size={16}/>}   label="Адрес офиса"  value="г. Атырау, ул. Сатпаева, 14, оф. 301"/>
-                    <ContactLine icon={<Icons.Building size={16}/>} label="Производство" value="г. Атырау, промзона «Север», уч. 14"/>
+                    <ContactLine icon={<Icons.MapPin size={16}/>}   label="Адрес офиса"  value="г. Атырау, ул. Сырым Датова 99а"/>
+                    <ContactLine icon={<Icons.Building size={16}/>} label="Производство" value="г. Атырау, ул. Сырым Датова 99а"/>
                     <ContactLine icon={<Icons.Clock size={16}/>}    label="Часы работы"  value="Пн — Сб · 09:00 — 19:00"/>
                     <ContactLine icon={<Icons.Phone size={16}/>}    label="Телефон"      value="+7 702 782 94 74"/>
                   </div>
@@ -156,7 +156,7 @@ function ContactPage({ navigate, onOpenConsult }) {
               <div className="absolute top-6 left-6 bg-white rounded-2xl border border-ink-200 shadow-soft p-5 max-w-xs">
                 <div className="text-[11px] font-mono uppercase tracking-[0.14em] text-ink-400 mb-1">МЫ ЗДЕСЬ</div>
                 <div className="display text-[18px] font-medium mb-1">Манас Строй</div>
-                <div className="text-[13px] text-ink-500 leading-relaxed">ул. Сатпаева, 14, оф. 301<br/>г. Атырау, Казахстан</div>
+                <div className="text-[13px] text-ink-500 leading-relaxed">ул. Сырым Датова 99а<br/>г. Атырау, Казахстан</div>
                 <div className="mt-3 pt-3 border-t border-ink-100 flex items-center gap-3 text-[13px]">
                   <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:underline flex items-center gap-1.5">
                     <Icons.WhatsApp size={14}/> Написать

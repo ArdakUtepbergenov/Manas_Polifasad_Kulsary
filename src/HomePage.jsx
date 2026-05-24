@@ -84,7 +84,7 @@ function Hero({ onOpenConsult, navigate }) {
             {[
               { v: '340+', l: 'объектов сдано' },
               { v: '25',   l: 'лет гарантии' },
-              { v: '12',   l: 'лет на рынке' },
+              { v: '8',   l: 'лет на рынке' },
             ].map((s, i) => (
               <Reveal key={i} delay={320 + i * 80}>
                 <div>
@@ -240,7 +240,7 @@ function StatsSection() {
             <Reveal><Eyebrow dark className="mb-5">ЦИФРЫ</Eyebrow></Reveal>
             <Reveal delay={80}>
               <h2 className="display text-white text-[clamp(36px,5.4vw,72px)] font-medium leading-[0.96] tracking-tightest">
-                Тринадцать лет<br/>в одной дисциплине —<br/><span className="text-gold-light italic font-light">фасады.</span>
+                Восемь лет<br/>в одной дисциплине —<br/><span className="text-gold-light italic font-light">фасады.</span>
               </h2>
             </Reveal>
           </div>

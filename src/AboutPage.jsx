@@ -9,7 +9,7 @@ function AboutPage({ navigate, onOpenConsult }) {
         <Container size="wide">
           <div className="grid lg:grid-cols-12 gap-10">
             <div className="lg:col-span-8">
-              <Reveal><Eyebrow className="mb-6">О КОМПАНИИ · С 2013 ГОДА</Eyebrow></Reveal>
+              <Reveal><Eyebrow className="mb-6">О КОМПАНИИ · С 2018 ГОДА</Eyebrow></Reveal>
               <Reveal delay={80}>
                 <h1 className="display text-[clamp(48px,7.6vw,128px)] font-medium leading-[0.94] tracking-tightest">
                   Архитектурное<br/>отношение к <span className="text-gold italic font-light">фасаду.</span>
@@ -25,13 +25,13 @@ function AboutPage({ navigate, onOpenConsult }) {
               <Reveal delay={220}>
                 <Card className="p-6">
                   <div className="text-[11px] font-mono uppercase tracking-[0.14em] text-ink-400 mb-1">ОСНОВАНО</div>
-                  <div className="display text-[28px] font-medium tracking-tight">2013</div>
+                  <div className="display text-[28px] font-medium tracking-tight">2018</div>
                 </Card>
               </Reveal>
               <Reveal delay={280}>
                 <Card className="p-6">
                   <div className="text-[11px] font-mono uppercase tracking-[0.14em] text-ink-400 mb-1">ОФИС</div>
-                  <div className="text-[15px] font-medium leading-snug">г. Атырау, ул. Сатпаева 14, оф. 301</div>
+                  <div className="text-[15px] font-medium leading-snug">г. Атырау, ул. Сырым Датова 99а</div>
                 </Card>
               </Reveal>
             </div>
@@ -217,7 +217,7 @@ function ProductionTimeline() {
         <SectionHeader
           align="split"
           eyebrow="ИСТОРИЯ"
-          title="Тринадцать лет в одной дисциплине"
+          title="Восемь лет в одной дисциплине"
           lead="Мы не открывали новые направления, не уходили в смежные ниши. Все эти годы — фасады, фасады и фасады."
         />
         <div className="mt-16 md:mt-24 relative">
@@ -247,7 +247,7 @@ function ValuesSection() {
   const values = [
     { title: 'Качество без компромиссов', text: 'Мы не используем материалы дешевле определённого порога — даже если клиент готов. Это вопрос репутации, которая строится десятилетиями.' },
     { title: 'Прозрачность сметы',        text: 'В смете прописывается каждая позиция: материалы, работы, доставка, утилизация. Никаких «прочих расходов» и «по факту».' },
-    { title: 'Сроки = договор',           text: 'Если мы зафиксировали срок в договоре — мы укладываемся в него. За 12 лет — 98% объектов сданы в срок или досрочно.' },
+    { title: 'Сроки = договор',           text: 'Если мы зафиксировали срок в договоре — мы укладываемся в него. За 8 лет — 100% объектов сданы в срок или досрочно.' },
     { title: 'Сервис после',              text: 'После сдачи фасада мы не исчезаем. Раз в два года — бесплатный плановый осмотр и фотоотчёт состояния.' },
   ];
   return (

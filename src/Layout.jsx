@@ -180,7 +180,7 @@ function Footer({ navigate, onOpenConsult }) {
           <div className="md:col-span-5">
             <Logo dark />
             <p className="mt-6 max-w-md text-[14.5px] text-white/60 leading-[1.7]">
-              Производство и монтаж премиальных фасадных систем в Атырау с 2013 года.
+              Производство и монтаж премиальных фасадных систем в Атырау с 2018 года.
               Архитектурное качество, гарантия 25 лет, собственная производственная площадка.
             </p>
             <div className="mt-7 flex gap-3">
@@ -207,7 +207,7 @@ function Footer({ navigate, onOpenConsult }) {
         </div>
 
         <div className="pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-[12.5px] text-white/40">
-          <div>© 2013 — 2026 Манас Строй. Все права защищены.</div>
+          <div>© 2018 — 2026 Манас Строй. Все права защищены.</div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white/70 transition-colors">Политика конфиденциальности</a>
             <a href="#" className="hover:text-white/70 transition-colors">Договор оферты</a>
