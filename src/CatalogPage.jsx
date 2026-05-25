@@ -42,7 +42,7 @@ function CatalogPage({ navigate, onOpenConsult }) {
       </section>
 
       {/* Sticky filters */}
-      <div className="sticky top-[72px] md:top-[84px] z-20 glass border-b border-ink-100">
+      <div className="md:sticky md:top-[84px] z-20 glass border-b border-ink-100">
         <Container size="wide" className="py-4 flex flex-wrap items-center gap-3 md:gap-5">
           <div className="flex items-center gap-2 text-[12px] font-mono uppercase tracking-[0.16em] text-ink-500">
             <Icons.Filter size={14}/> Фильтры

@@ -160,9 +160,9 @@ function Footer({ navigate, onOpenConsult }) {
           <div className="lg:col-span-5 lg:pl-8 lg:border-l border-white/10 flex flex-col justify-end">
             <Reveal delay={200}>
               <div className="space-y-5">
-                <FooterContact icon={<Icons.MapPin size={18}/>}  label="Адрес"   value="г. Атырау, ул. Сатпаева, 14, оф. 301" />
+                <FooterContact icon={<Icons.MapPin size={18}/>}  label="Адрес"   value="г. Атырау, ул. Сырым Датова 99а" />
                 <FooterContact icon={<Icons.Phone size={18}/>}   label="Телефон" value="+7 (702) 782-94-74" href="tel:+77027829474"/>
-                <FooterContact icon={<Icons.Mail size={18}/>}    label="Почта"   value="hello@manasstroy.kz" href="mailto:hello@manasstroy.kz"/>
+                <FooterContact icon={<Icons.Mail size={18}/>}    label="Почта"   value="info@manasstroi.kz" href="mailto:info@manasstroi.kz"/>
                 <FooterContact icon={<Icons.Clock size={18}/>}   label="Часы"    value="Пн–Сб 09:00 — 19:00" />
               </div>
             </Reveal>
@@ -180,7 +180,7 @@ function Footer({ navigate, onOpenConsult }) {
               <SocialLink href="https://wa.me/77027829474"     icon={<Icons.WhatsApp size={17}/>}/>
               <SocialLink href="https://instagram.com"          icon={<Icons.Instagram size={17}/>}/>
               <SocialLink href="tel:+77027829474"               icon={<Icons.Phone size={17}/>}/>
-              <SocialLink href="mailto:hello@manasstroy.kz"    icon={<Icons.Mail size={17}/>}/>
+              <SocialLink href="mailto:info@manasstroi.kz"    icon={<Icons.Mail size={17}/>}/>
             </div>
           </div>
 
