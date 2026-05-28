@@ -64,7 +64,7 @@ function ContactPage({ navigate, onOpenConsult }) {
                 <div className="lg:col-span-4 grid grid-cols-3 lg:grid-cols-1 gap-3 text-white">
                   <WAstat label="Время ответа" value="7 мин"/>
                   <WAstat label="Доступно"     value="Пн — Сб"/>
-                  <WAstat label="Часы"         value="09:00 — 21:00"/>
+                  <WAstat label="Часы"         value="09:00 — 18:00"/>
                 </div>
               </div>
             </a>
@@ -124,7 +124,7 @@ function ContactPage({ navigate, onOpenConsult }) {
                   <div className="space-y-5 text-[14.5px]">
                     <ContactLine icon={<Icons.MapPin size={16}/>}   label="Адрес офиса"  value="г. Атырау, ул. Сырым Датова 99а"/>
                     <ContactLine icon={<Icons.Building size={16}/>} label="Производство" value="г. Атырау, ул. Сырым Датова 99а"/>
-                    <ContactLine icon={<Icons.Clock size={16}/>}    label="Часы работы"  value="Пн — Сб · 09:00 — 19:00"/>
+                    <ContactLine icon={<Icons.Clock size={16}/>}    label="Часы работы"  value="Пн — Сб · 09:00 — 18:00"/>
                     <ContactLine icon={<Icons.Phone size={16}/>}    label="Телефон"      value="+7 702 782 94 74"/>
                   </div>
                   <div className="mt-auto pt-8 grid grid-cols-2 gap-3">

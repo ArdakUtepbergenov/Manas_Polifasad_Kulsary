@@ -163,7 +163,7 @@ function Footer({ navigate, onOpenConsult }) {
                 <FooterContact icon={<Icons.MapPin size={18}/>}  label="Адрес"   value="г. Атырау, ул. Сырым Датова 99а" />
                 <FooterContact icon={<Icons.Phone size={18}/>}   label="Телефон" value="+7 (702) 782-94-74" href="tel:+77027829474"/>
                 <FooterContact icon={<Icons.Mail size={18}/>}    label="Почта"   value="info@manasstroi.kz" href="mailto:info@manasstroi.kz"/>
-                <FooterContact icon={<Icons.Clock size={18}/>}   label="Часы"    value="Пн–Сб 09:00 — 19:00" />
+                <FooterContact icon={<Icons.Clock size={18}/>}   label="Часы"    value="Пн–Сб 09:00 — 18:00" />
               </div>
             </Reveal>
           </div>
@@ -174,7 +174,7 @@ function Footer({ navigate, onOpenConsult }) {
             <Logo dark />
             <p className="mt-6 max-w-md text-[14.5px] text-white/60 leading-[1.7]">
               Производство и монтаж премиальных фасадных систем в Атырау с 2018 года.
-              Архитектурное качество, гарантия 25 лет, собственная производственная площадка.
+              Архитектурное качество, гарантия 5 лет, собственная производственная площадка.
             </p>
             <div className="mt-7 flex gap-3">
               <SocialLink href="https://wa.me/77027829474"     icon={<Icons.WhatsApp size={17}/>}/>
