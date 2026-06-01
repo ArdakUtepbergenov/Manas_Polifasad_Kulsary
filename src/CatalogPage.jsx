@@ -4,15 +4,13 @@ function CatalogPage({ navigate, onOpenConsult }) {
   const { CATALOG, CATALOG_CATEGORIES, CATALOG_COLORS } = window.AppData;
   const [cat, setCat] = useState('all');
   const [color, setColor] = useState('all');
-  const [maxPrice, setMaxPrice] = useState(20000);
   const [openId, setOpenId] = useState(null);
   const [view, setView] = useState('grid');
 
   const items = useMemo(() => CATALOG.filter(p =>
     (cat === 'all' || p.category === cat) &&
-    (color === 'all' || p.color === color) &&
-    p.price <= maxPrice
-  ), [cat, color, maxPrice]);
+    (color === 'all' || p.color === color)
+  ), [cat, color]);
 
   const open = useMemo(() => CATALOG.find(p => p.id === openId), [openId]);
 
@@ -66,13 +64,6 @@ function CatalogPage({ navigate, onOpenConsult }) {
             ))}
           </div>
           <div className="hidden lg:flex items-center gap-3 ml-auto">
-            <span className="text-[12px] font-mono uppercase tracking-[0.14em] text-ink-500">Цена до</span>
-            <input
-              type="range" min="2000" max="20000" step="500" value={maxPrice}
-              onChange={e => setMaxPrice(+e.target.value)}
-              className="w-40 accent-accent"
-            />
-            <span className="text-[13px] font-medium tabular-nums w-24 text-right">{maxPrice.toLocaleString('ru-RU')} ₸</span>
             <div className="h-6 w-px bg-ink-200"/>
             <div className="flex gap-1">
               <button onClick={() => setView('grid')} className={`h-9 w-9 rounded-full flex items-center justify-center transition ${view==='grid' ? 'bg-ink-900 text-white' : 'text-ink-500 hover:text-ink-900'}`}>
@@ -92,9 +83,7 @@ function CatalogPage({ navigate, onOpenConsult }) {
           <div className="text-[14px] text-ink-500">
             Показано <span className="text-ink-900 font-medium">{items.length}</span> из {CATALOG.length} позиций
           </div>
-          <div className="text-[13px] font-mono uppercase tracking-[0.14em] text-ink-400">
-            Цены ориентировочные · точная смета после замера
-          </div>
+          <div/>
         </Container>
       </div>
 
@@ -105,7 +94,7 @@ function CatalogPage({ navigate, onOpenConsult }) {
             <div className="py-32 text-center">
               <p className="display text-2xl font-medium mb-3">Ничего не найдено</p>
               <p className="text-ink-500 mb-6">Попробуйте изменить фильтры</p>
-              <Button onClick={() => { setCat('all'); setColor('all'); setMaxPrice(20000); }} variant="primary" size="md">Сбросить фильтры</Button>
+              <Button onClick={() => { setCat('all'); setColor('all'); }} variant="primary" size="md">Сбросить фильтры</Button>
             </div>
           ) : view === 'grid' ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -160,11 +149,7 @@ function ProductCard({ product, onOpen }) {
           </div>
           <h3 className="display text-[22px] font-medium tracking-tight mb-2 leading-tight">{product.title}</h3>
           <p className="text-[13.5px] text-ink-500 leading-relaxed mb-5">{product.spec}</p>
-          <div className="flex items-end justify-between pt-4 border-t border-ink-100">
-            <div>
-              <div className="text-[11px] font-mono uppercase tracking-[0.14em] text-ink-400 mb-0.5">от</div>
-              <div className="display text-[22px] font-medium tracking-tight">{product.price.toLocaleString('ru-RU')} ₸<span className="text-[12px] font-normal text-ink-400 ml-1">/м²</span></div>
-            </div>
+          <div className="flex items-center justify-end pt-4 border-t border-ink-100">
             <span className="text-[13px] text-ink-500 group-hover:text-ink-900 transition-colors flex items-center gap-2">
               Подробнее
               <Icons.ArrowRight size={14} className="transition-transform group-hover:translate-x-1"/>
@@ -187,10 +172,6 @@ function ProductRow({ product, onOpen }) {
         <div className="text-[11px] font-mono uppercase tracking-[0.16em] text-ink-400 mb-1">{product.categoryLabel} · {product.colorLabel}</div>
         <h3 className="display text-[20px] font-medium tracking-tight mb-1">{product.title}</h3>
         <p className="text-[13px] text-ink-500 hidden md:block">{product.spec}</p>
-      </div>
-      <div className="hidden md:block">
-        <div className="text-[11px] font-mono uppercase tracking-[0.14em] text-ink-400 mb-0.5">от</div>
-        <div className="display text-[20px] font-medium">{product.price.toLocaleString('ru-RU')} ₸<span className="text-[11px] text-ink-400">/м²</span></div>
       </div>
       <span className="h-11 w-11 rounded-full bg-ink-50 group-hover:bg-ink-900 group-hover:text-white transition flex items-center justify-center">
         <Icons.ArrowRight size={16}/>
@@ -263,11 +244,7 @@ function ProductModal({ product, onClose, onOpenConsult }) {
               </ul>
             </div>
 
-            <div className="pt-8 border-t border-ink-100 flex items-end justify-between gap-6 flex-wrap">
-              <div>
-                <div className="text-[11px] font-mono uppercase tracking-[0.14em] text-ink-400 mb-1">Цена от</div>
-                <div className="display text-[36px] font-medium tracking-tight">{product.price.toLocaleString('ru-RU')} ₸<span className="text-[14px] text-ink-400 ml-1">/м²</span></div>
-              </div>
+            <div className="pt-8 border-t border-ink-100 flex items-end justify-end gap-6 flex-wrap">
               <div className="flex gap-2 flex-wrap">
                 <Button onClick={() => { onClose(); onOpenConsult(); }} variant="primary" size="md">Рассчитать стоимость</Button>
                 <Button href="https://wa.me/77027829474" as="a" variant="outline" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>WhatsApp</Button>
