@@ -43,7 +43,7 @@ function Hero({ onOpenConsult, navigate }) {
             <span className="mx-3 text-white/20">/</span>
             <span className="text-white/40">E 51° 55'</span>
             <span className="mx-3 text-white/20">·</span>
-            <span>Атырау, Казахстан</span>
+            <span>Кульсары, Казахстан</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
             <span className="text-white/40">2013 — 2026</span>
@@ -66,7 +66,7 @@ function Hero({ onOpenConsult, navigate }) {
           </Reveal>
           <Reveal delay={180}>
             <p className="mt-8 max-w-xl text-[17px] md:text-[19px] leading-[1.55] text-white/75">
-              Производим и монтируем премиальные фасадные системы для частных домов, коттеджей, ресторанов и коммерческих зданий в Атырау. Архитектурное качество, гарантия год.
+              Производим и монтируем премиальные фасадные системы для частных домов, коттеджей, ресторанов и коммерческих зданий в Кульсары. Архитектурное качество, гарантия год.
             </p>
           </Reveal>
           <Reveal delay={260}>
@@ -177,7 +177,7 @@ function FeaturedProjectsSection({ navigate }) {
           align="split"
           eyebrow="ИЗБРАННЫЕ ПРОЕКТЫ"
           title="Каталог наших фасадов"
-          lead="Каждый объект — индивидуальное проектное решение. Ниже несколько работ последних лет в Атырау."
+          lead="Каждый объект — индивидуальное проектное решение. Ниже несколько работ последних лет в Кульсары."
           cta={<Button onClick={() => navigate('portfolio')} variant="outline" size="md" iconAfter={null}>Все проекты — 5000+</Button>}
         />
         <div className="mt-16 md:mt-20 grid md:grid-cols-12 gap-6 md:gap-8">
@@ -424,11 +424,11 @@ function InstagramSection() {
       <Container size="wide">
         <SectionHeader
           align="split"
-          eyebrow="@МАНАССТРОЙ · INSTAGRAM"
+          eyebrow="@МАНАССТРОЙКУЛЬСАРЫ · INSTAGRAM"
           title={<>Хроника наших<br/>фасадов</>}
           lead="Каждую неделю показываем процесс с объектов, детали монтажа и архитектурную съёмку завершённых работ."
           cta={
-            <a href="https://instagram.com" className="inline-flex items-center gap-3 text-[14px] font-medium tracking-tight hover:text-accent transition-colors">
+            <a href="https://www.instagram.com/manas_stroi_kulsary/" className="inline-flex items-center gap-3 text-[14px] font-medium tracking-tight hover:text-accent transition-colors">
               <Icons.Instagram size={18}/> Подписаться · 12.4K
               <Icons.ArrowUpRight size={16}/>
             </a>
@@ -437,7 +437,7 @@ function InstagramSection() {
         <div className="mt-16 grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-4">
           {imgs.map((src, i) => (
             <Reveal key={i} delay={i * 60}>
-              <a href="https://instagram.com" className="block group relative overflow-hidden rounded-2xl" style={{ aspectRatio: '1/1' }}>
+              <a href="https://www.instagram.com/manas_stroi_kulsary/" className="block group relative overflow-hidden rounded-2xl" style={{ aspectRatio: '1/1' }}>
                 <img src={src} alt="" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy"/>
                 <div className="absolute inset-0 bg-ink-900/0 group-hover:bg-ink-900/40 transition-colors duration-500 flex items-center justify-center">
                   <Icons.Instagram size={28} className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"/>
@@ -470,7 +470,7 @@ function MapSection() {
             <Reveal><Eyebrow className="mb-5">ГЕОГРАФИЯ ПРОЕКТОВ</Eyebrow></Reveal>
             <Reveal delay={80}>
               <h2 className="display text-[clamp(34px,5vw,64px)] font-medium leading-[0.98] tracking-tightest">
-                5000+ фасадов<br/>по всему Атырау
+                5000+ фасадов<br/>по всему Кульсары
               </h2>
             </Reveal>
           </div>
@@ -528,7 +528,7 @@ function MapSection() {
               <div className="flex items-center gap-2 mt-2"><span className="h-1 w-5 bg-accent"/> р. Урал</div>
             </div>
             <div className="absolute bottom-6 right-6 bg-white/95 backdrop-blur border border-ink-200 rounded-2xl px-5 py-3 text-[12px] font-mono uppercase tracking-wider text-ink-600">
-              г. АТЫРАУ · масштаб 1:25 000
+              г. Кульсары · масштаб 1:25 000
             </div>
           </div>
         </Reveal>
