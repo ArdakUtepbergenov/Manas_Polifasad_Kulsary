@@ -174,7 +174,7 @@ function Footer({ navigate, onOpenConsult }) {
             <Logo dark />
             <p className="mt-6 max-w-md text-[14.5px] text-white/60 leading-[1.7]">
               Производство и монтаж премиальных фасадных систем в Атырау с 2018 года.
-              Архитектурное качество, гарантия 5 лет, собственная производственная площадка.
+              Архитектурное качество, гарантия год, собственная производственная площадка.
             </p>
             <div className="mt-7 flex gap-3">
               <SocialLink href="https://wa.me/77027829474"     icon={<Icons.WhatsApp size={17}/>}/>
